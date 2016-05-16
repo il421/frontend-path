@@ -2,8 +2,8 @@
 
 ## Учебные материалы
 ### Курсы
-* [Bash: Основы командной строки](https://ru.hexlet.io/courses/bash) — бесплатно, **обязательно** для новичков, рекомендуется для всех.
-* [Learn the Command Line](https://www.codecademy.com/learn/learn-the-command-line) — бесплатно, рекомендуется для всех.
+* [Bash: Основы командной строки](https://ru.hexlet.io/courses/bash) — **обязательно для новичков**, рекомендуется для всех.
+* [Learn the Command Line](https://www.codecademy.com/learn/learn-the-command-line) — рекомендуется для всех.
 
 ### Лекции
-* [Командная строка Unix](https://events.yandex.ru/lib/talks/1292/) — бесплатно, рекомендуется для продвинутых разработчиков. Лекция от Школы Разработки Интерфейсов в Яндексе.
+* [Командная строка Unix](https://events.yandex.ru/lib/talks/1292/) — рекомендуется для продвинутых разработчиков. Лекция от Школы Разработки Интерфейсов в Яндексе.
