@@ -2,7 +2,7 @@
 
 ## Учебные материалы
 ### Курсы
-* [Bash: Основы командной строки](https://ru.hexlet.io/courses/bash) — бесплатно, обязательно для новичков, рекомендуется для всех.
+* [Bash: Основы командной строки](https://ru.hexlet.io/courses/bash) — бесплатно, *обязательно* для новичков, рекомендуется для всех.
 * [Learn the Command Line](https://www.codecademy.com/learn/learn-the-command-line) — бесплатно, рекомендуется для всех.
 
 ### Лекции
