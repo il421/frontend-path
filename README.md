@@ -1,5 +1,6 @@
 # Области знаний
 * [Командная строка](learn/bash.md)
+* [Работа с проектом локально](learn/local-development.md)
 * [Система контроля версий: Git и GitHub](learn/git.md)
 * ...
 
