@@ -85,3 +85,40 @@
     <?php endforeach; ?>
 </ul>
 ```
+
+## jQuery
+### Ajax
+Плохо :shit:
+```js
+// Нет обработчиков ошибок:
+$.ajax({
+    url: "post.php",
+    // ...
+}).done(function (json) {
+    // Все ок. Показываем ответ сервера:
+    $("<h1>").text(json.title).appendTo("body");
+    $("<div class=\"content\">").html(json.html).appendTo("body");
+});
+```
+
+Хорошо :+1:
+```javascript
+// Есть обработчики ошибок:
+$.ajax({
+    url: "post.php",
+    // ...
+}).done(function (json) {
+    // Все ок. Показываем ответ сервера:
+    $("<h1>").text(json.title).appendTo("body");
+    $("<div class=\"content\">").html(json.html).appendTo("body");
+}).fail(function (xhr, status, errorThrown) {
+    // Показали ошибку, если сервер не ответил и вывели техническую информация в консоль:
+    alert("Извините, произошла ошибка. Пожалуйста, обновите страницу и попробуйте еще раз.");
+    console.log("Error: " + errorThrown);
+    console.log("Status: " + status);
+    console.dir(xhr);
+}).always(function (xhr, status) {
+    $.fancybox.hideLoading(); // Убрали крутилку в любом случае.
+});
+```
+
