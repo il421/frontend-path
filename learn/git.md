@@ -34,7 +34,7 @@
 `git add` — добавить в staging area (подготовка).
 `git commit -m "Add styles for header"` — добавляет в репозиторий изменения из staging area.
 `git log` — показать список последних изменений. Можно искать (`/`), переходить к следующему вхождению (`n`). Это Vim в visual mode, как документация по команде в баше (например, `man ls`).
-`git log --oneline -p` — показать измененный код (`-p` — patch).
+`git log --oneline -p` — показать историю коммитов с измененным кодом (`-p` — patch).
 `git log --pretty=oneline` — выводить данные по комитам в одну строку.
 `git log --pretty=format:"%h %ad- %s [%an]"` — задать свой формат вывода.
 %ad — author date
@@ -48,6 +48,20 @@
 `git log --since=1.day.ago` — начиная со вчера
 `git log --since=1.month.ago --until=1.day.ago` — месяц без вчерашнего дня (относительный промежуток).
 `git log --since=2016-01-01 --until=2016-04-01` — с января по апрель (асболютный промежуток).
+
+## Настройка
+`git config --list` — показать текущие настройки.
+`~/.gitconfig` — файл конфигурации.
+`git config --global core.editor sublime -n -w` — изменить редактор для редактирования сообщений в комитах.
+
+`git config --global alias.lol "log --graph --decorate --pretty=oneline --abbrev-commit --all"` — задать аллиас для команды с опциями.
+
+Часто используемые алиасы:
+`git config --global alias.st status`
+`git config --global alias.co checkout`
+`git config --global alias.br branch`
+`git config --global alias.ci commit`
+
 
 
 ## Термины
