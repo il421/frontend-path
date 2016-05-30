@@ -11,9 +11,14 @@
 
 ## Учебные материалы
 ### Курсы
-* [Git Real I](https://www.codeschool.com/courses/git-real)
-* [Git Real II](https://www.codeschool.com/courses/git-real-2)
+* [Git Real I](https://www.codeschool.com/courses/git-real) — обязательно
+* [Git Real II](https://www.codeschool.com/courses/git-real-2) — обязательно
 * [Mastering GitHub](https://www.codeschool.com/courses/mastering-github)
+* [GitHowTo](https://githowto.com/ru) — интерактивный тур по возможностям гита.
+* [Learn Git Branching](http://learngitbranching.js.org/) — интерактивная обучалка по работе с ветками.
+* [Git. Быстрый старт](https://geekbrains.ru/courses/66) — курс от GeekBrains (бесплатно).
+* [Getting Git](https://vimeo.com/14629850) — часовое видео по введению в гит.
+* [Гит для новичков](https://www.youtube.com/watch?v=PEKN8NtBDQ0) — видеокурс от LoftSchool.
 
 ### Книги
 * [Pro Git](https://git-scm.com/book/ru/v2)
