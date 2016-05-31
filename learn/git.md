@@ -21,7 +21,8 @@
 * [Гит для новичков](https://www.youtube.com/watch?v=PEKN8NtBDQ0) — видеокурс от LoftSchool.
 
 ### Книги
-* [Pro Git](https://git-scm.com/book/ru/v2)
+* [Pro Git](https://git-scm.com/book/ru/v2) — основная книга про Гит.
+* [Become a git guru](https://www.atlassian.com/git/tutorials) — отличный учебник от Atlassian (они делают [Bitbucket](http://bitbucket.org)).
 
 ### Документация
 * [Правила работы с Гитом в Oggetto](http://w.oggettoweb.com/index.php?title=%D0%98%D1%81%D0%BF%D0%BE%D0%BB%D1%8C%D0%B7%D0%BE%D0%B2%D0%B0%D0%BD%D0%B8%D0%B5_git)
