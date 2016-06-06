@@ -5,7 +5,7 @@
 * [jQuery: The Return Flight](https://www.codeschool.com/courses/jquery-the-return-flight) — Ajax, Utility methods, Plugins, Promises.
 
 ### Заметки к занятиям в офисе
-* [Ядро jQuery](core)
-* [События](events)
-* [Ajax](ajax)
+* [Ядро jQuery](core/index.md)
+* [События](events/index.md)
+* [Ajax](ajax/index.md)
 

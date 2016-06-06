@@ -98,6 +98,7 @@ $('#menu li'); // Сначала браузер найдет все li в док
 $('#menu').find('li'); // Найдет #menu, это быстро.
                        // Связано с алгоритмом рендеринга у браузеров.
                        // Потом уже отфильтрует только детей #menu и найдет li.
+
 $('#menu').children(); // Если нужно выбрать только прямых потомков.
                        // Аналогично #menu > li, только быстрее.
 ```
@@ -105,26 +106,34 @@ $('#menu').children(); // Если нужно выбрать только пря
 ### Ajax
 Плохо :shit:
 ```js
-// Нет обработчиков ошибок:
 $.ajax({
-    url: "post.php",
-    // ...
-}).done(function (json) {
-    // Все ок. Показываем ответ сервера:
-    $("<h1>").text(json.title).appendTo("body");
-    $("<div class=\"content\">").html(json.html).appendTo("body");
+    // Параметры задаются прямо в урле — плохо читаемо.
+    // Параметр захардкожен.
+    url: 'response.php?price=2038',
+    beforeSend: showLoading
+
+    // Используются устаревшие методы (success, complete, error)
+    success: function(json) {
+        $("<div class=\"content\">").html(json.html).appendTo("body");
+        hideLoading(); // убираем крутилку
+    }
+
+    // Нет обработчиков ошибок.
+    // Крутилка убирается только по success. При ошибке она будет крутиться дальше.
 });
 ```
 
 Хорошо :+1:
 ```javascript
-// Есть обработчики ошибок:
+// Есть обработчики ошибок.
+// Используются правильные методы: done, fail, always.
+// GET-параметры вынесены из URL.
 $.ajax({
-    url: "post.php",
-    // ...
+    url: "response.php",
+    data: {
+        'price': $btn.data('price') // Параметр берется из HTML
+    },
 }).done(function (json) {
-    // Все ок. Показываем ответ сервера:
-    $("<h1>").text(json.title).appendTo("body");
     $("<div class=\"content\">").html(json.html).appendTo("body");
 }).fail(function (xhr, status, errorThrown) {
     // Показали ошибку, если сервер не ответил и вывели техническую информация в консоль:

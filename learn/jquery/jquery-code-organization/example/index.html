@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<style>
+		.product {
+			width: 200px;
+			background: #EEE;
+		}
+	</style>
+</head>
+<body>
+<ul id="catalog">
+	<li class="product">
+		<img src="" class="product__img" alt="">
+		<h3 class="product__name">Пылесос</h3>
+		<div class="product__rating" style="display: none;">★★★☆☆</div>
+		<button class="product__buy js-product-buy" data-price="200">Купить</button>
+	</li>	
+	<li class="product">
+		<img src="" class="product__img" alt="">
+		<h3 class="product__name">Стиральная машина</h3>
+		<div class="product__rating" style="display: none;">★★★★☆</div>
+		<button class="product__buy" data-price="200">Купить</button>
+		<button class="product__wishlist">В вишлист</button>
+	</li>	
+</ul>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+<script>
+	var catalog = {
+	    init: function() {
+	        $('#catalog')
+		        .on('mouseover', '.product', this.showRating)
+		        .on('click', '.product__buy', this.buyProduct.bind(this)) // Вариант: $.proxy(this.buyProduct, this);
+		        .on('click', '.product__wishlist', () => { this.addToWishlist(); }); // ES6: контекст привязываем обернув в функцию-стрелку. Если на проекте есть Babel.
+	    },
+
+	    showRating: function() {
+	    	// Здесь this — элемент, на котором произошло событие: .product, на который навели мышкой
+	    	console.log(this);
+	    	$(this).find('.product__rating').show();
+	    },
+
+	    buyProduct: function() {
+	    	// Здесь this — наш объект catalog, потому что мы привязали контекст текущего объекта через .bind(this)
+	    	console.log(this);
+	    	this.sendRequest('Buy');
+	    },
+
+	    addToWishlist: function() {
+	    	console.log(this)
+	    	this.sendRequest('Wishlist');
+	    },
+
+	    sendRequest: function(type) {
+	    	alert('Request: ' + type);
+	    }
+	};
+
+	$(function() {
+	    catalog.init();
+	});
+</script>
+</body>
+</html>
