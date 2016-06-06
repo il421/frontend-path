@@ -12,7 +12,8 @@
 * [Английский язык](learn/english.md)
 * [Слепая печать](learn/keyboard.md)
 * [Программирование](learn/programming.md)
-* [Discover DevTools](https://www.codeschool.com/courses/discover-devtools)
+* [Инструменты разработчика](learn/devtools.md)
+* [Работа с NPM](learn/npm.md)
 
 # Рекомендации по прохождению курсов
 * Для ускоренного воспроизведения видео можно использовать [плагин для Хрома](https://chrome.google.com/webstore/detail/html5-video-speed-control/ejdipbccipeloijefbkiakckfhdbgocg?hl=ru).
