@@ -9,6 +9,8 @@
 * [Работа с проектом локально](learn/local-development.md)
 * [Система контроля версий: Git и GitHub](learn/git.md)
 * [jQuery](learn/jquery/index.md)
+* [Инструменты разработчика](learn/devtools.md)
+* [NPM](learn/npm.md)
 * ...
 
 # Код
@@ -18,8 +20,6 @@
 * [Английский язык](learn/english.md)
 * [Слепая печать](learn/keyboard.md)
 * [Программирование](learn/programming.md)
-* [Инструменты разработчика](learn/devtools.md)
-* [Работа с NPM](learn/npm.md)
 
 # Рекомендации по прохождению курсов
 * Для ускоренного воспроизведения видео можно использовать [плагин для Хрома](https://chrome.google.com/webstore/detail/html5-video-speed-control/ejdipbccipeloijefbkiakckfhdbgocg?hl=ru).
