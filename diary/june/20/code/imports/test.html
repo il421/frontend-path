@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+<body>
+<script>
+    // Global Env
+
+    var x = 0; // Global.x
+
+    function addition() { // Global.addition
+        /* LE = {
+         innerX: undefined,
+         }
+         */
+        var innerX = 0; // Local.innerX => 0
+
+        return function () {
+            /* Local2 = {
+             Upper LE: Local
+             Global LE: Global Env
+             }
+             */
+            return ++innerX; // Local.innerX
+        }
+    }
+
+
+
+    for (var i = 0; i < 10; i++) {
+        let a = i;
+    }
+
+</script>
+</body>
+</html>

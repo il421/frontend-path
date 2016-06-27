@@ -6,12 +6,11 @@
 
 # Области знаний
 * [Командная строка](learn/bash.md)
-* [Работа с проектом локально](learn/local-development.md)
 * [Система контроля версий: Git и GitHub](learn/git.md)
-* [jQuery](learn/jquery/index.md)
+* [NPM](learn/npm.md)
+* [jQuery](learn/jquery.md)
 * [JavaScript](learn/js.md)
 * [Инструменты разработчика](learn/devtools.md)
-* [NPM](learn/npm.md)
 * ...
 
 # Код
@@ -50,4 +49,3 @@
 * Работа с проектом локально: раскатать, работа с базой, сервером, версиями PHP и MySQL. Основы виртуализации: Vagrant, Ansible, Magestead.
 * Magento: админка на уровне пользователя, работа с темами.
 * Continuous Integration, Jenkins: как это все работает, зачем нужно и как этим пользоваться.
-
