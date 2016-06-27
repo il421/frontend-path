@@ -1,10 +1,9 @@
 .idea/
+.DS_Store
 notes.md
 plans/
-videos/
 
 # Store only .less files in snippets
 # Сниппеты пока игнорим
 snippets/
 snippets/**/*.css
-homework-solution.html
