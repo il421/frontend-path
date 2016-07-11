@@ -11,7 +11,7 @@
 * [jQuery](learn/jquery.md)
 * [JavaScript](learn/js.md)
 * [Инструменты разработчика](learn/devtools.md)
-* [Сборка: Gulp, Webpack](lean/assets-pipeline.md)
+* [Сборка: Gulp, Webpack](learn/assets-pipeline.md)
 * ...
 
 # Код
