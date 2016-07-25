@@ -9,6 +9,7 @@
 * [Discover DevTools](https://www.codeschool.com/courses/discover-devtools)
 
 ## Статьи
+* [Chrome DevTools](https://developers.google.com/web/tools/chrome-devtools/)
 * [Отладка в браузере Chrome](http://learn.javascript.ru/debugging-chrome)
 
 ## TODO

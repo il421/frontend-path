@@ -1,0 +1,31 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+</head>
+<body>
+
+<div class="element element_1">element 1</div>
+<div class="element element_2">element 2</div>
+<div class="element element_3">element 3</div>
+
+<script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.0.0/jquery.min.js"></script>
+<script>
+    var $elements = $('.element');
+
+    $elements.each(function () {
+        // Метод each запускается в контексте DOM-объектов,
+        // поэтому this тут будет обычный DOM-объект. Не jQuery-объект.
+        // https://api.jquery.com/each/ — тут в первом абзаце об этом написано.
+        var $element = this, // А раз так, то надо: var element = this
+            elementId = this.id; // с jQuery-объектом бы так не получилось. Надо было бы брать $element.attr('id')
+
+        if (elementId) {
+            $element.innerHTML += ' - id is' + elementId;
+            // При использовании jQuery нужно пользоваться методом .html вместо innerHTNL: https://learn.jquery.com/using-jquery-core/jquery-object/
+        }
+    });
+</script>
+</body>
+</html>

@@ -2,6 +2,7 @@
 .DS_Store
 notes.md
 plans/
+node_modules
 
 # Store only .less files in snippets
 # Сниппеты пока игнорим

@@ -1,0 +1,22 @@
+{
+  "name": "media-queries",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "php -S localhost:8080"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "browser-sync": "^2.13.0",
+    "flexibility": "^2.0.1",
+    "gulp": "^3.9.1",
+    "gulp-autoprefixer": "^3.1.0",
+    "gulp-connect-php": "0.0.7",
+    "gulp-less": "^3.1.0",
+    "picturefill": "^3.0.2",
+    "slick-carousel": "^1.6.0"
+  }
+}

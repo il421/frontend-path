@@ -1,0 +1,117 @@
+@mobile: ~"only screen and (max-width: 767px)";
+@tablet: ~"only screen and (min-width: 768px) and (max-width: 1024px)";
+@desktop: ~"only screen and (min-width: 1900px)";
+
+@phone-plus: ~"only screen and (min-width: 320px)";
+@tablet-plus: ~"only screen and (min-width: 768px)";
+@desktop-plus: ~"only screen and (min-width: 1024px)";
+
+@media @mobile {
+    html body {
+        .hide-on-mobile {
+            display: none;
+        }
+        .only-mobile {
+            display: block;
+
+            &_inline {
+                display: inline;
+            }
+        }
+    }
+}
+
+@media @desktop {
+    html body {
+        .only-mobile {
+            display: none;
+        }
+    }
+}
+
+.home-banner {
+    img {
+        max-width: 100%;
+    }
+
+    .home-banner-item {
+        &__image {
+            &.hide-on-mobile {
+                display: none !important;
+            }
+
+            &.only-mobile {
+                display: block !important;
+            }
+        }
+    }
+}
+
+// Flex
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.grid {
+     -js-display: flex;
+     display: flex;
+     flex-wrap: wrap;
+     justify-content: space-between;
+     align-items: flex-start; // flex-start | flex-end | center | baseline | stretch;
+     background: #C6E746;
+}
+
+.grid-item {
+    width: 15%;
+    height: 200px;
+    background: #CCC;
+    border: 2px solid;
+    box-sizing: border-box;
+
+    @media @tablet {
+        width: 50%;
+    }
+
+    @media @mobile {
+        width: 100%;
+    }
+
+    &_1 {
+        order: 1;
+    }
+
+    &_2 {
+        height: 400px;
+        //width: vmin;
+    }
+
+    &::after {
+        content: attr(class);
+    }
+}
+
+@media @mobile {
+    .menu {
+        width: 300px;
+        position: absolute;
+        height: 100vh;
+        background: purple;
+        transform: translate(-300px, 0);
+        transition: all 1s;
+
+        &.open {
+            transform: translate(0, 0);
+        }
+    }
+
+    .menu-toggle {
+        position: absolute;
+        top: 0;
+        left: 0;
+        font-size: 160%;
+        cursor: pointer;
+        z-index: 100;
+        transform: rotate(90deg);
+    }
+}
