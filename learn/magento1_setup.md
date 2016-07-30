@@ -8,8 +8,11 @@
 После прочтения ридми клонируем проект.
 
 ## Настройка сервера
-задать хосты на проект и конфигурацию
+Задать хосты на проект и конфигурацию.
+
+```
 sudo service nginx restart
+```
 
 ```
 cd /etc/nginx/sites-available
@@ -22,7 +25,7 @@ cp [existigsite].loc [project-name].loc
 
 Прописываем путь к проекту в nginx.
 
-Рестартуем nginx: `nginx.restart`.
+Рестартуем nginx: `nginx.restart` — вроде у каждого сейчас в bash_profile есть один и тот же набор алиасов.
 
 ## Настройка базы данных
 Для работы проекта нужны данные: товары, структура каталога, пользователи и т. д. Если проект новый, то берется тестовая официальная [Magento Sample Data](http://devdocs.magento.com/guides/m1x/ce18-ee113/ht_magento-ce-sample.data.html) — дамп базы и картинки. Если работать нужно с уже существующим проектом или за основу берется готовый проект, то дамп базы нужно взять или у коллег или загрузить с дев-сервера.
@@ -60,7 +63,7 @@ update core_config_data set value = 'http://[project-name].loc/' where path = 'w
 update core_config_data set value = 'http://[project-name].loc/' where path = 'web/secure/base_url';
 ```
 
-Перед работой нужно отключить объединение JS и CSS ресурсов. Это можно сделать в командной строке:
+Перед работой нужно отключить объединение JS и CSS ресурсов. Это можно сделать с помощью SQL-запроса:
 
 ```sql
 update core_config_data set value=0 where path like '%merge%';
