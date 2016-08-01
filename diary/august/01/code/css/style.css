@@ -1,0 +1,85 @@
+/* Font Icons */
+@font-face {
+  font-family: 'iconfont';
+  src: url('../fonts/iconfont.woff') format('woff'), url('../fonts/iconfont.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+.font-icons {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+.font-icons .font-icon {
+  display: inline-block;
+}
+.font-icon_1::before {
+  font-family: 'iconfont';
+  speak: none;
+  font-size: 100%;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  content: '';
+}
+.font-icon_2::before {
+  font-family: 'iconfont';
+  speak: none;
+  font-size: 100%;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  content: '';
+}
+.font-icon_3::before {
+  font-family: 'iconfont';
+  speak: none;
+  font-size: 100%;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  content: '';
+}
+.font-icon_4::before {
+  font-family: 'iconfont';
+  speak: none;
+  font-size: 100%;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  content: '';
+}
+.svg-icons {
+  -js-display: flex;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+.svg-icon {
+  background: #CCC;
+}
+.svg-icon svg {
+  display: inline-block;
+}

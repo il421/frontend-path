@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Icon font example</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <!-- Font Icons -->
+    <ul class="font-icons">
+        <li class="font-icon font-icon_1"></li>
+        <li class="font-icon font-icon_2"></li>
+        <li class="font-icon font-icon_3"></li>
+        <li class="font-icon font-icon_4"></li>
+        <li class="font-icon font-icon_5"></li>
+    </ul>
+    <!-- SVG icons -->
+    <ul class="svg-icons">
+        <li class="svg-icon">
+            <svg>
+                <use xlink:href="includes/svg.svg#phone_icon" />
+            </svg>
+        </li>
+        <li class="svg-icon">
+            <svg>
+                <use xlink:href="includes/svg.svg#pack_icon" />
+            </svg>
+        </li>
+        <li class="svg-icon">
+            <svg>
+                <use xlink:href="includes/svg.svg#lock_icon" />
+            </svg>
+        </li>
+        <li class="svg-icon">
+            <svg>
+                <use xlink:href="includes/svg.svg#products_icon" />
+            </svg>
+        </li>
+    </ul>
+    <script src="js/flexibility1.0.6_svg_fix.js"></script>
+    <!-- <script src="js/flexibility2.0.1.js"></script> -->
+    <script src="js/svg4everybody.min.js"></script>
+    <script>
+    	// flexibility(document.documentElement);
+    	svg4everybody();
+    </script>
+</body>
+
+</html>

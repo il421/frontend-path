@@ -1,0 +1,21 @@
+{
+  "name": "icon-font",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "icon-font": "gulp iconfont"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "gulp": "^3.9.1",
+    "gulp-iconfont": "^8.0.1",
+    "gulp-svgstore": "^6.0.0"
+  },
+  "dependencies": {
+    "gulp-fontcustom": "^0.1.1"
+  }
+}
