@@ -28,8 +28,9 @@ server {
 ## Улучшаем сборку на проде
 Задача: улучшить вот этот код:
 
-```
-rm -rf skin/frontend/matrix/default/tmp && NODE_ENV=production webpack && rm -rf skin/frontend/matrix/default/public && cp -r skin/frontend/matrix/default/tmp skin/frontend/matrix/default/public
+```json
+"dev": "php -f shell/toggle_base_skin_url.php -- --base_url http://localhost:8080/skin/ && rm -rf skin/frontend/matrix/default/public && npm start",
+"prod": "php -f shell/toggle_base_skin_url.php -- --base_url {{unsecure_base_url}}skin/ && rm -rf skin/frontend/matrix/default/tmp && NODE_ENV=production webpack && rm -rf skin/frontend/matrix/default/public && cp -r skin/frontend/matrix/default/tmp skin/frontend/matrix/default/public",
 ```
 
 Косяки в текущей:
@@ -82,4 +83,11 @@ module.exports = {
         })
     ]
 };
+```
+
+А скрипты в `package.json` урощаются до таких:
+
+```json
+"dev": "php -f shell/toggle_base_skin_url.php -- --base_url http://localhost:8080/skin/ npm start",
+"prod": "php -f shell/toggle_base_skin_url.php -- --base_url {{unsecure_base_url}}skin/ && NODE_ENV=production webpack",
 ```
